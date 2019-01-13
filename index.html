@@ -1,0 +1,184 @@
+<html lang="de">
+<title>Nature meets Piano</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+           title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
+        <a href="#how" class="w3-bar-item w3-button w3-padding-large w3-hide-small">How to?</a>
+        <a href="#controller" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Controller</a>
+    </div>
+</div>
+
+<!-- The About Section -->
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+    <h2 class="w3-wide">ABOUT</h2>
+    <p class="w3-opacity"><i>We love music</i></p>
+    <p class="w3-justify">Nature meets Piano ist ein Mix aus wunderschöner Hintergrundmusik und einem kleinem Piano.
+
+        Die Website beinhaltet drei Naturgeräusche - Feuer, Regen und Wind welche dir dabei helfen während der Arbeit,
+        beim Lernen oder beim Lesen zu entspannen. Man kann per Mausklick auswählen, welche Hintergrundgeräusche man
+        hören möchte und wie laut es ist.
+        Das besondere ist die Verstellung der Soundausgänge, ob der Sound auf dem Linken oder Rechten Ausgang abgespielt
+        wird.
+
+        Das Piano ist die optimale Ergänzung zu den Geräuschen, welches man mit der Tastatur benutzt, um während des
+        Brainstormings oder beim nachdenken ein bisschen musizieren kann.</p>
+    <div class="w3-row w3-padding-32">
+        <div class="w3-half">
+            <p>Manuel Patti</p>
+            <img src="img/haw.png" class="w3-round w3-margin-bottom" style="width:50%">
+        </div>
+        <div class="w3-half">
+            <p>Anas Garwal</p>
+            <img src="img/haw.png" class="w3-round w3-margin-bottom" style="width:50%">
+        </div>
+
+    </div>
+</div>
+
+<!-- The Controller Section -->
+<div class="w3-grey" id="how">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center">HOW TO</h2>
+
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-container w3-white" style="height: 200px">
+                    <p><b>Schritt 1</b></p>
+                    <p>
+                  <span>Wählen Sie die Lautstärke der Naturgeräusche.
+                    <br>
+                  Wählen Sie auf welchem Ohr es Hörbar sein soll.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-container w3-white" style="height: 200px">
+                    <p><b>Schritt 2</b></p>
+                    <p>
+                        <span>Drücken Sie auf den Play-Knopf, wenn Sie mit ihren Einstellungen durch sind.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-container w3-white" style="height: 200px">
+                    <p><b>Schritt 3</b></p>
+                    <p>
+                        <span>Sie können nun nach belieben die tasten<br> A, S, D, F, G, H, J, K und L <br> auf ihrer Tastatur drücken um die Töne des Klaviers erklingen zu lassen.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- The Controller Section -->
+<div class="w3-black" id="controller">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center">Klavier - Controller</h2>
+
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+            <div class="w3-third w3-margin-bottom">
+                <img src="img/fire.png" style="width:100%" class="w3-hover-opacity w3-padding">
+                <div class="w3-container w3-white">
+                    <p><b>Fire</b></p>
+                    <p>
+                        <input type="range" min="0" max="100" value="100" class="w3-slider" id="fireVS" step="10">
+                        <br>
+                        <span id="fireVO">100 %</span>
+                    </p>
+                    <p>
+                        <input type="range" min="0" max="100" value="50" class="w3-slider" id="firePS">
+                        <br>
+                        <span id="firePO">0 LR</span>
+                    </p>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <img src="img/rain.png" style="width:100%" class="w3-hover-opacity w3-padding">
+                <div class="w3-container w3-white">
+                    <p><b>Rain</b></p>
+                    <p>
+                        <input type="range" min="0" max="100" value="100" class="w3-slider" id="rainVS" step="10">
+                        <br>
+                        <span type="number" id="rainVO">100 %</span>
+                    </p>
+                    <p>
+                        <input type="range" min="0" max="100" value="50" class="w3-slider" id="rainPS">
+                        <br>
+                        <span id="rainPO">0 LR</span>
+                    </p>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <img src="img/wind.png" style="width:100%" class="w3-hover-opacity w3-padding">
+                <div class="w3-container w3-white">
+                    <p><b>Wind</b></p>
+                    <p>
+                        <input type="range" min="0" max="100" value="100" class="w3-slider" id="windVS" step="10">
+                        <br>
+                        <span id="windVO">100 %</span>
+                    </p>
+                    <p>
+                        <input type="range" min="0" max="100" value="50" class="w3-slider" id="windPS">
+                        <br>
+                        <span id="windPO">0 LR</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-container w3-center w3-padding">
+            <button class="w3-button w3-white w3-margin-bottom w3-round" id="btnPLay">PLAY</button>
+        </div>
+
+        <ul class="w3-ul w3-border w3-white w3-text-grey">
+        </ul>
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+            <div class="w3-klavierKey w3-hover-opacity" id="key1">
+                <h3 class="w3-center w3-margin-bottom" id="keyId">A</h3>
+            </div>
+            <div class="w3-klavierKey w3-hover-opacity" id="key2">
+                <h3 class="w3-center w3-margin-bottom" id="keyId">B</h3>
+            </div>
+            <div class="w3-klavierKey w3-hover-opacity" id="key3">
+                <h3 class="w3-center w3-margin-bottom" id="keyId">C</h3>
+            </div>
+            <div class="w3-klavierKey w3-hover-opacity" id="key4">
+                <h3 class="w3-center w3-margin-bottom" id="keyId">D</h3>
+            </div>
+            <div class="w3-klavierKey w3-hover-opacity" id="key5">
+                <h3 class="w3-center w3-margin-bottom" id="keyId">E</h3>
+            </div>
+            <div class="w3-klavierKey w3-hover-opacity" id="key6">
+                <h3 class="w3-center w3-margin-bottom" id="keyId">F</h3>
+            </div>
+            <div class="w3-klavierKey w3-hover-opacity" id="key7">
+                <h3 class="w3-center w3-margin-bottom" id="keyId">G</h3>
+            </div>
+            <div class="w3-klavierKey w3-hover-opacity" id="key8">
+                <h3 class="w3-center w3-margin-bottom" id="keyId">A</h3>
+            </div>
+            <div class="w3-klavierKey w3-hover-opacity" id="key9">
+                <h3 class="w3-center w3-margin-bottom" id="keyId">B</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <p class="w3-medium">Powered by: <br>Manuel Patti <br>Anas Garwal</p>
+</footer>
+
+<script src="js/soundCtrl.js"></script>
+
+</body>
+</html>
